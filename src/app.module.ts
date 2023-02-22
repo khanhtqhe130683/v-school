@@ -31,9 +31,12 @@ import { ScoreModule } from './api/score/score.module';
 import { SubjectClassModule } from './api/subject-class/subject-class.module';
 import { TeacherSubjectClassModule } from './api/teacher-subject-class/teacher-subject-class.module';
 import { AuthModule } from './api/auth/auth.module';
+import { MessageModule } from './api/message/message.module';
+import { ScheduleModule } from '@nestjs/schedule';
 
 @Module({
   imports: [
+    ScheduleModule.forRoot(),
     RoleModule,
     UserModule,
     TeacherModule,
@@ -64,6 +67,7 @@ import { AuthModule } from './api/auth/auth.module';
     SubjectClassModule,
     TeacherSubjectClassModule,
     AuthModule,
+    MessageModule,
   ],
   controllers: [AppController],
   providers: [AppService],

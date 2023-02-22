@@ -19,7 +19,7 @@ export class StudentService {
     return this.studentRepository.save(createStudentDto);
   }
 
-  findAll(query: QueryParamStudentDto) {
+  async findAll(query: QueryParamStudentDto) {
     const conditions = {};
     if (query.class) {
       conditions['class'] = { id: query.class };
@@ -27,8 +27,16 @@ export class StudentService {
     return this.studentRepository.findAllByConditions(conditions, query, { class: true });
   }
 
+  async findAllByCondition(conditions) {
+    return this.studentRepository.findAllByConditions(conditions, {}, {});
+  }
+
   findOne(id: number) {
     return `This action returns a #${id} student`;
+  }
+
+  async findOneByCondition(condition) {
+    return this.studentRepository.findOneByCondition({ where: condition });
   }
 
   async updateStatus(id: number, updateStudentDto: UpdateStudentStatusDto) {

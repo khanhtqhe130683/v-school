@@ -8,6 +8,15 @@ export const JWT_CONFIG = {
   SALT_ROUNDS: 12,
 };
 
+export const MESSAGE_CONFIG = {
+  URL: 'https://chat.googleapis.com/v1/spaces/AAAAn0rXD64/messages?key=AIzaSyDdI0hCZtE6vySjMm-WEfRq3CPzqKqqsHI&token=a1lfwkCeS09mKdyhP4MnqgbYWWd4t3ETmphqos72ql4%3D',
+};
+
+export const CRON = {
+  PATTERN: process.env.CRON_PATTERN || '0 * * * * *',
+  MESSAGE: process.env.CRON_MESSAGE || 'chúc mừng sinh nhật',
+};
+
 export const MYSQL_CONFIG = {
   hostMaster: process.env.MYSQL_MASTER_HOST || '',
   hostSlaves: process.env.MYSQL_SLAVES_HOST || '',
