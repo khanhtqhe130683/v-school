@@ -1,0 +1,4 @@
+export const STUDENT_COMMENT_CONST = {
+  MODEL_NAME: 'student_comment',
+  MODEL_PROVIDER: 'STUDENT_COMMENT_MODEL',
+};

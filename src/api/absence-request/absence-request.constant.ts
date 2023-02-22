@@ -1,0 +1,4 @@
+export const ABSENCE_REQUEST_CONST = {
+  MODEL_NAME: 'absence_request',
+  MODEL_PROVIDER: 'ABSENCE_REQUEST_MODEL',
+};

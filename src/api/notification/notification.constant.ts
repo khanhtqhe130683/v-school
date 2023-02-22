@@ -1,0 +1,4 @@
+export const NOTIFICATION_CONST = {
+  MODEL_NAME: 'notification',
+  MODEL_PROVIDER: 'NOTIFICATION_MODEL',
+};

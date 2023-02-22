@@ -1,0 +1,4 @@
+export const STUDENT_INVOICE_CONST = {
+  MODEL_NAME: 'student_invoice',
+  MODEL_PROVIDER: 'STUDENT_INVOICE_MODEL',
+};

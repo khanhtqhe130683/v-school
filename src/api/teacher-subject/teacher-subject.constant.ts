@@ -1,0 +1,4 @@
+export const TEACHER_SUBJECT_CONST = {
+  MODEL_NAME: 'teacher_subject',
+  MODEL_PROVIDER: 'TEACHER_SUBJECT_MODEL',
+};

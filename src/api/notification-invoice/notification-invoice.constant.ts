@@ -1,0 +1,4 @@
+export const NOTIFICATION_INVOICE_CONST = {
+  MODEL_NAME: 'notification_invoice',
+  MODEL_PROVIDER: 'NOTIFICATION_INVOICE_MODEL',
+};
